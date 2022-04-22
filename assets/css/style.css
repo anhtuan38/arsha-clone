@@ -283,9 +283,7 @@
   background: var(--bg-blue);
 }
 
-#hero .container {
-  padding-top: 72px;
-}
+#hero .container {}
 
 #hero h1 {
   margin: 0 0 10px 0;
@@ -417,7 +415,7 @@
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding-top: 90px;
   overflow: hidden;
 }
 
@@ -466,10 +464,18 @@ section {
   margin-bottom: 0;
 }
 
+@media screen and (max-width: 991px) {
+  section {
+    padding-top: 0;
+  }
+}
+
+
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
 .clients {
+  height: 20vh;
   padding: 12px 0;
   text-align: center;
 }
@@ -488,6 +494,10 @@ section {
 }
 
 @media (max-width: 768px) {
+  .clients {
+    height: 100%;
+  }
+
   .clients img {
     max-width: 40%;
   }
